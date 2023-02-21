@@ -4,7 +4,7 @@
 
 Sortiert nach
 
-1. [**Jahresthema**](#Das Jahresthema)
+1. [**Jahresthema**](#das-jahresthema)
  - Jahr der Dokumentation
  - Kapitel anlegen
 2. **Kapitel / Die einzelnen Formate**
