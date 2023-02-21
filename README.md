@@ -7,7 +7,7 @@ Sortiert nach
 1. [**Jahresthema**](#das-jahresthema)
  - Jahr der Dokumentation
  - Kapitel anlegen
-2. [**Kapitel / Die einzelnen Formate**](#die-kapitel-innerhalb -der-dokumentation)
+2. [**Kapitel / Die einzelnen Formate**](#die-kapitel-innerhalb-der-dokumentation)
  - Title
  - Aside / Einführungstext
  - Projekte / Texte zu den Projekten einstellen
