@@ -39,8 +39,15 @@ Für jedes Format wird ein Kapitel erstellt. Kapitel können auch einen Einleitu
 ## Die Texte zu den Projekten innerhalb der Kapitel
 
 Hier können Förderer angegeben werden. Wir wissen noch nicht wie wir sie nutzen.
+Es kann optional ein anderer Titel eingeben werden und ein Untertitle soweit benötigt.
+In der Eingabemaske für den eigentlichen Text zeigt oben links Die Anzahl der Zeichen.
+Jeder Text kann auch einen Aside-Bereich und Fußnoten enthalten
 
 ## Die Texte zu Unterprojekten innerhalb der Projekte
+Hier gilt das gleiche wie zu den Texten außer, dass keine Förderer angeben werden können.
 
 ## Förderer einstellen
+hier bitte den genauen Wortlaut der Förderer angeben und das logo hochladen. Am liebsten das PNG Format. 
+
+Wenn sich der Text und Logo über die Jahre verändert diese bitte neu einstellen mit der Jahreszahl dahinter.
  
