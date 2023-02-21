@@ -1,0 +1,6 @@
+type: pages
+parent: site.find('page://sprEnzHUWr5KVIlS')
+layout: cards
+create: documentation
+template: documentation
+info: '{{page.year.toDate('Y') }}'

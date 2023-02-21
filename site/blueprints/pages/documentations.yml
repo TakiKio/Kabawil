@@ -1,0 +1,8 @@
+title: Dokus
+option:
+  delete: false
+
+sections:
+  publikationen:
+    extends: sections/documentation
+

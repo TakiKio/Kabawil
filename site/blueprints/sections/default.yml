@@ -1,0 +1,6 @@
+type: pages
+layout: cards
+create: default
+template: default
+image:
+  query: page.images.first

@@ -1,0 +1,6 @@
+type: pages
+layout: cards
+create: project
+template: project
+image:
+  query: page.images.first

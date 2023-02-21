@@ -1,0 +1,69 @@
+title: Projekt
+
+status:
+  draft: Entwurf
+  listed: Veröffentlicht
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      fields:
+        type: fields
+        fields:
+          grant:
+            label: Förderer
+            type: multiselect
+            options:
+              type: query
+              query: site.find('page://t0C22KhZbnTj30hT').children.listed
+            width: 1/2
+          author:
+            label: Autoren
+            type: text
+            width: 1/2
+          headline:
+            label: Headline
+            type: text
+            placeholder: Leerlassen wenn der Titel okay ist
+          subheadline:
+            label: Subheadline
+            type: text
+          aside:
+            label: Einführung/Zusatzinfo
+            type: textarea
+            size: small
+            buttons:
+              - bold
+              - italic
+          text:
+            type: textarea
+            size: huge
+            buttons:
+              - bold
+              - italic
+              - ul
+              - ol
+          footnotes:
+            label: Fußnoten
+            type: writer
+            inline: true
+
+  sidebar:
+    width: 1/3
+    sections:
+      info:
+        type: fields
+        fields:
+          description:
+            label: Info
+            type: info
+            text: |
+              Hier werden eigenständige Unterteilungen zum Haupttext oder Texte für Unterprojekte eingestellt ;-))
+      pages:
+        headline: Workshops / Texte
+        type: pages
+        create: subproject
+      bilder:
+        type: files
+

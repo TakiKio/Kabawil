@@ -1,0 +1,25 @@
+title: Site
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          description:
+            label: Beschreibung
+            type: text
+
+  - width: 1/3
+    sections:
+      pages:
+        type: pages
+        headline: Seiten
+        create:
+          - default
+          - category
+
+  - width: 1
+    sections:
+      publikationen:
+        extends: sections/documentation

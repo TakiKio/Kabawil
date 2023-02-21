@@ -1,0 +1,28 @@
+title: Kapitel
+
+sections:
+  info:
+    type: fields
+    fields:
+      headline:
+        label: Texte zu den Projekte in diesem Kapitel
+        type: headline
+      description:
+        label: Info
+        type: info
+        text: |
+          Hier werden die Texte zu den einzelnen Projekten eingestellt.
+          Bitte Texte zu untergeordneten Projekten innerhalb der Projekte eingeben ;-))
+      aside:
+        label: Einführungstext
+        type: textarea
+  drafts:
+    extends: sections/project
+    label: Entwürfe
+    status: draft
+    layout: list
+  listed:
+    extends: sections/project
+    label: Öffentlich sichtbar
+    status: listed
+

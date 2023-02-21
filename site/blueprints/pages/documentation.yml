@@ -1,0 +1,19 @@
+title: Jahresthema
+num: '{{ page.year }}'
+status:
+  draft: Entwurf
+  listed: Veröffentlicht
+options:
+
+sections:
+  content:
+    type: fields
+    fields:
+      year:
+        label: Jahr der Dokumentation
+        type: date
+        display: YYYY
+  kapitel:
+    type: pages
+    create: chapter
+

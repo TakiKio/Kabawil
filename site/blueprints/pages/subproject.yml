@@ -1,0 +1,38 @@
+title: Unterprojekt
+pages: false
+columns:
+  main:
+    width: 2/3
+    sections:
+      fields:
+        type: fields
+        fields:
+          author:
+            label: Autoren
+            type: text
+            width: 1/2
+          aside:
+            label: Einführung/Zusatzinfo
+            type: textarea
+            size: small
+            buttons:
+              - bold
+              - italic
+          text:
+            type: textarea
+            size: huge
+            buttons:
+              - bold
+              - italic
+              - ul
+              - ol
+          footnotes:
+            label: Fußnoten
+            type: writer
+            inline: true
+  sidebar:
+    width: 1/3
+    sections:
+      files:
+        type: files
+

@@ -1,0 +1,10 @@
+{
+  "identifier" : "3BDE816B-33A1-49B3-AD83-FF94A8B5120E",
+  "ignoredFilePatterns" : [
+    ".nova"
+  ],
+  "localPath" : ".",
+  "remotePath" : "\/kabwil-doku",
+  "server" : "Taki Kiometzis",
+  "usesPublishing" : true
+}

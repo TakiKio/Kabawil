@@ -1,0 +1,172 @@
+/* digicalli 400 */
+@font-face {
+  font-family: 'digicalli';
+  font-style: normal;
+  font-weight: 400;
+  src:  url('../fonts/digicalligraph-regular.eot'); /* IE9 Compat Modes */
+  src:  local(''),
+        url('../fonts/digicalligraph-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/digicalligraph-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/digicalligraph-regular.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+/* ibm-plex-mono-regular - latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ibm-plex-mono-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/ibm-plex-mono-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ibm-plex-mono-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ibm-plex-mono-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ibm-plex-mono-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ibm-plex-mono-v15-latin-regular.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
+}
+
+/* ibm-plex-mono-500 - latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/ibm-plex-mono-v15-latin-500.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/ibm-plex-mono-v15-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ibm-plex-mono-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ibm-plex-mono-v15-latin-500.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ibm-plex-mono-v15-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ibm-plex-mono-v15-latin-500.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
+}
+
+/* ibm-plex-mono-600 - latin */
+@font-face {
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/ibm-plex-mono-v15-latin-600.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/ibm-plex-mono-v15-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/ibm-plex-mono-v15-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ibm-plex-mono-v15-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/ibm-plex-mono-v15-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/ibm-plex-mono-v15-latin-600.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
+}
+
+
+/* ###################### CSS VARIABLEN ########### */
+:root {
+  --main-color: rgb(0, 98, 211);
+  --secondary-color: rgb(255, 215, 238);
+  --tertiary-color: rgb(183, 248, 139) ;
+}
+
+/* ###################### LAYOUT ################## */
+
+
+[aria-label="breadcrumb"] a {
+  color: black;
+}
+
+[aria-label="breadcrumb"] a:hover {
+  color: var(--main-color);
+}
+
+[aria-current="location"] a, ul.toc [aria-current="location"] a {
+  color:  var(--main-color);
+  text-decoration: none;
+}
+
+body {
+  font-family: 'IBM Plex Mono';
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+
+article {
+  margin-bottom: 4rem;
+}
+.kapitel {
+  padding: 1rem;
+  background-color: var(--secondary-color);
+}
+.chapter {
+  margin: 0 auto 2rem;
+}
+section.main {
+  max-width: 42rem;
+  border: 1px solid black; display: block
+}
+.content {
+  padding: 1rem;
+}
+.kirbytext aside {
+  color: var(--main-color);
+  font-size: .875rem
+}
+div.footnotes {
+  font-size: .875rem
+}
+
+.sidebar-content {
+  padding: 2rem;
+  padding-top: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+ul.toc {
+  list-style: none;
+}
+
+ul.toc a {
+  text-decoration: none;
+  color: black;
+}
+
+ul.toc.main li {
+  background-color: var(--tertiary-color);
+  padding: 1rem;
+  display: block;
+  font-size: 1.5rem;
+  padding-top: .5rem;
+  margin-top: .5rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  border-bottom: 5px solid black;
+  display: inline-block;
+  margin-top: 0;
+}
+
+/*  ##################### HELPER #################  */
+
+.inline-block {
+  display: inline-block;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.output:empty {
+  display: none;
+}
+
+.display-none {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* ###################### RESPPONSIV ############# */
+
+@media screen and (min-width: 1200px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 30rem 1fr;
+  }
+}

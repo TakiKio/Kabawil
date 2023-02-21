@@ -1,0 +1,9 @@
+title: Dokus
+preset: page
+pages: false
+
+fields:
+  subtitle:
+    type: text
+  text:
+    type: textarea

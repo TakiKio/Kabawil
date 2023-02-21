@@ -1,0 +1,19 @@
+title: Kategorieseite
+
+sections:
+  drafts:
+    extends: sections/default
+    label: Entwurf
+    status: draft
+    layout: list
+  unlisted:
+    extends: sections/default
+    label: Gelisted aber nicht öffentlich sichtbar
+    status: unlisted
+    layout: list
+  listed:
+    extends: sections/default
+    label: Öffentlich sichtbar
+    status: listed
+
+
