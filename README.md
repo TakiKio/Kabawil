@@ -25,7 +25,7 @@ Sortiert nach
  - Aside
  - Text
  - Fußnoten
-5. [**Förderer**](#forderer-einstellen)
+5. [**Förderer**](#förderer-einstellen)
  - Text und Logos zu den Förderern einstellen
  
 ## Das Jahresthema
