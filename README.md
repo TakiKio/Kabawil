@@ -28,3 +28,17 @@ Sortiert nach
 5. **Förderer**
  - Text und Logos zu den Förderern einstellen
  
+## 1. Jahresthema
+
+Hier wird das Jahresthema mit dem dazugehörigen Jahr eingetragen
+
+## 2. Kapitel / Die einzelnen Formate
+**Die Kapitel innerhalb der Dokumentation**
+
+Für jedes Format wird ein Kapitel erstellt. Kapitel können auch einen Einleitungstext enthalten. Der ist dann dem ersten Projekt vorangestellt.
+
+## 3. Projekte / Texte zu den Projekten
+**Die Texte zu den Projekten innerhalb der Kapitel**
+
+Hier können Förderer angegeben werden. Wir wissen noch nicht wie wir sie nutzen.
+ 
