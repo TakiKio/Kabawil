@@ -1,5 +1,10 @@
 title: Kapitel
 
+status:
+  draft: Entwurf
+  unlisted: Überarbeitung
+  listed: Freigabe
+
 sections:
   info:
     type: fields
@@ -18,11 +23,16 @@ sections:
         type: textarea
   drafts:
     extends: sections/project
-    label: Entwürfe
+    label: Entwurf
+    status: draft
+    layout: list
+  unlisted:
+    extends: sections/project
+    label: Überarbeitung
     status: draft
     layout: list
   listed:
     extends: sections/project
-    label: Öffentlich sichtbar
+    label: Freigabe
     status: listed
 

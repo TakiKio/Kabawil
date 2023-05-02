@@ -3,11 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="keywords" content="" />
-    <meta name="author" content="">
+    <title><?= $site->title() ?> | <?= $page->headline()->or($page->title()) ?></title>
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="robots" content="noindex" />
     <!-- !CSS -->
     <?= css('/assets/css/main.css') ?>
 </head>
@@ -15,16 +13,17 @@
 <body>
     <div id="container">
         <div class="grid">
-            <div class="sidebar" style="margin-right: 2rem">
+            <div class="sidebar no-print" style="margin-right: 2rem">
                 
-                <?php if ($kirby->user()): ?>
-                <ul>
-                  <li style="border: 1px solid black; padding: 1rem; display: block"><a target="_blank" href="<?= $page->panel()->url() ?> ">Diese Seite bearbeiten</a></li>
+                <?php if ($user = $kirby->user()) : ?>
+                <ul class="login">
+                    <li><a target="_blank" href="<?= $page->panel()->url() ?> ">Diese Seite bearbeiten</a>
+                    </li>
+                    <li><a href="<?= url('logout') ?>">Logout</a>
+                    </li>
                 </ul>
                 <?php else : ?>
-                <ul>
-                  <li style="border: 1px solid black; padding: 1rem; display: block"><a href="<?= url('panel') ?>">Login</a></li>
-                </ul>
+                    <?php go('/login') ?>
                 <?php endif ?>
                 <div style="">
                     <ul class="toc main">
@@ -49,7 +48,10 @@
             </div><!-- /header -->
         
             <section id="main"">
-                <nav aria-label="breadcrumb">
+                <div class="only-print">
+                    <?= date('d.m.Y') ?> / <?= $kirby->user()->username() ?>
+                </div>
+                <nav class="no-print" aria-label="breadcrumb">
                     Du bist hier:
                   <ul>
                     <?php foreach($site->breadcrumb()->not('home', 'dokumentationen') as $crumb): ?>

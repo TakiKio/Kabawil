@@ -7,11 +7,12 @@
     <?php endslot() ?>
     
     <?= slot('main') ?>
-        <section class="main kirbytext">
+        <section class="main print kirbytext">
             <div class="content subProject" style="padding-top: 3rem">
                 <article>
                     <strong><?= $page->title() ?></strong>
                     <h4><?= $page->author() ?></h4>
+                    <?php snippet('images', ['images' => $page->images()]) ?>
                     <aside><?= $page->aside()->kt() ?></aside>
                     <?= $page->text()->kt() ?>
                     <?php if ($page->footnotes()->isNotEmpty()) : ?>

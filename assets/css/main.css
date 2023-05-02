@@ -57,6 +57,7 @@
   --main-color: rgb(0, 98, 211);
   --secondary-color: rgb(255, 215, 238);
   --tertiary-color: rgb(183, 248, 139) ;
+  --aside-color: rgb(255, 61, 35);
 }
 
 /* ###################### LAYOUT ################## */
@@ -100,7 +101,7 @@ section.main {
   padding: 1rem;
 }
 .kirbytext aside {
-  color: var(--main-color);
+  color: var(--aside-color);
   font-size: .875rem
 }
 div.footnotes {
@@ -135,6 +136,27 @@ ul.toc.main li {
   font-weight: bold;
 }
 
+ul.login li, button {
+  margin-bottom: 1rem;
+}
+
+ul.login li a, button  {
+  padding: .5rem 1rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: .5rem;
+}
+
+ul.login a:link, ul.login a:visited, .button:link, .button:visited {
+  background-color: rgb(61, 61, 61);
+  color: white;
+}
+
+ul.login a:hover, ul.login a:active, .button:hover, .button:active  {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
 h1 {
   font-size: 3rem;
   text-transform: uppercase;
@@ -142,11 +164,37 @@ h1 {
   display: inline-block;
   margin-top: 0;
 }
+form input {
+  display: flex;
+  padding: .6rem 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  padding: 2rem;
+  background-color: rgb(239, 239, 239);
+  border: solid 1py rgb(109, 109, 109);
+  border-radius: .3rem;
+}
+
+.container {
+  height: 100vh;
+}
 
 /*  ##################### HELPER #################  */
 
+.w-100 {
+  width: 100%;
+}
+
 .inline-block {
   display: inline-block;
+}
+.flex {
+  display: flex;
+}
+.m-auto {
+  margin: auto;
 }
 
 .no-underline {
@@ -168,5 +216,38 @@ h1 {
   .grid {
     display: grid;
     grid-template-columns: 30rem 1fr;
+  }
+
+  .gtc-columns-small {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}
+.only-print {
+  display: none;
+}
+
+@media print {
+  .gtc-columns-small img {
+    width: 30%;
+  }
+  .no-print {
+    display: none;
+  }
+  .print {
+    display: block;
+    margin-left: 3rem
+  }
+  section.main {
+    border: none;
+  }
+  .content {
+    min-height: 90vh;
+  }
+  .kirbytext aside {
+    color: rgb(61, 61, 61)
+  }
+  .only-print {
+    display: block;
   }
 }

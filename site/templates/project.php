@@ -8,12 +8,14 @@
     
     <?= slot('main') ?>
     
-        <section class="main kirbytext">
+        <section class="main print kirbytext">
             <div class="content project">
                 <article>
+                    <small>Inhaltsverzeichnis: <?= $page->title() ?></small><br>
                     <h1><?= $page->headline()->or($page->title()) ?></h1>
                     <h3><?= $page->subheadline() ?></h3>
                     <h4><?= $page->author() ?></h4>
+                    <?php snippet('images', ['images' => $page->images()]) ?>
                     <aside><?= $page->aside()->kt() ?></aside>
                     <?= $page->text()->kt() ?>
                     <?php if ($page->footnotes()->isNotEmpty()) : ?>
@@ -26,6 +28,7 @@
                         <article>
                             <h2><?= $subProject->title() ?></h2>
                             <h4><?= $subProject->author() ?></h4>
+                            <?php snippet('images', ['images' => $subProject->images()]) ?>
                             <aside><?= $subProject->aside()->kt() ?></aside>
                             <?= $subProject->text()->kt() ?>
                             <?php if ($subProject->footnotes()->isNotEmpty()) : ?>
